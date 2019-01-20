@@ -1,0 +1,190 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+}
+
+body {
+     background: url(../images/hero.jpg);
+     background-size: cover;
+}
+
+body:after {
+     content: "";
+     height: 300%;
+     left: -50%;
+     opacity: 0.8;
+     position: fixed;
+     top: -110%;
+     width: 300%;
+     z-index: 0;
+}
+
+@keyframes grain {
+     0%, 100% { transform: translate(0, 0); }
+     10% { transform: translate(-5%, -10%); }
+     20% { transform: translate(-15%, 5%); }
+     30% { transform: translate(7%, -25%); }
+     40% { transform: translate(-5%, 25%); }
+     50% { transform: translate(-15%, 10%); }
+     60% { transform: translate(15%, 0); }
+     70% { transform: translate(0, 15%); }
+     80% { transform: translate(3%, 35%); }
+     90% { transform: translate(-10%, 10%); }
+}
+
+.content {
+     z-index: 1;
+     position: relative;
+}
+
+h1 {
+     color: #e3e3e3 !important;
+     font-family: 'Lora', serif;
+     margin: 32px 0 32px 40px !important;
+     text-decoration: underline;
+}
+h2 {
+     color: #e3e3e3 !important;
+     font-family: 'Lato', sans-serif;
+     margin: 32px 0 32px 40px !important;
+     text-decoration: underline;
+}
+
+.row {
+     z-index: 1;
+     margin: 0 !important;
+     padding: 0 !important;
+}
+
+.cardd {
+     border: 1px solid rgba(255,255,255,0.1);
+     height: 350px;
+
+     -webkit-transition: 1s !important;
+}
+
+.row h5 {
+     color: #fff;
+     font-family: "Poppins";
+     margin: 48px 0 2px 4px;
+     font-size: 28px;
+    text-align: center;
+}
+
+.row h5:before {
+     position: absolute;
+     content: "";
+     top: 50px;
+     left: -2px;
+     width: 2px;
+     height: 22px;
+     display: block;
+     background: #fff;
+}
+
+p {
+     color: grey;
+     margin-left: 4px;
+     font-size: 14px;
+     margin-bottom: 70px !important;
+}
+
+a {
+     margin-left: 4px;
+     color: lightgrey !important;
+     font-family: Poppins;
+     font-weight: bolder;
+     text-transform: uppercase;
+     font-size: 10px;
+     letter-spacing: 2px;
+}
+
+a:hover {
+     text-decoration: none !important;
+     color: grey !important;
+}
+
+.cardd:hover:before {
+     -webkit-transition: 1s !important;
+     content: "";
+     position: absolute;
+     top: -100px;
+     left: 100px;
+     width: 280px;
+     height: 280px;
+     z-index: -1;
+     animation: anim 3.2s ease-in-out;
+}
+
+.card1.cardd:hover::before {
+     background: url(../images/team1.jpg);
+}
+.card2.cardd:hover::before {
+     background: url(../images/team2.jpg);
+}
+.card3.cardd:hover::before {
+     background: url(../images/team3.jpg);
+}
+
+.card4.cardd:hover::before {
+     background: url(../images/team1.jpg);
+}
+.card5.cardd:hover::before {
+     background: url(../images/team2.jpg);
+}
+.card6.cardd:hover::before {
+     background: url(../images/team3.jpg);
+}
+
+.card7.cardd:hover::before {
+     background: url(../images/team1.jpg);
+}
+.card8.cardd:hover::before {
+     background: url(../images/team2.jpg);
+}
+
+@keyframes anim {
+     0% {
+          opacity: 0;
+          left: 70px;
+     }
+
+     20% {
+          opacity: 1;
+          left: 90px;
+     }
+
+     100% {
+          opacity: 1;
+          left: 90px;
+     }
+}
+
+@media only screen and (max-width: 900px) {
+     a {
+          display: none !important;
+     }
+
+     .cardd {
+          height: 378px;
+          
+     }
+
+     .row h5 {
+          margin: 28px 0 2px 4px;
+     }
+
+     .row p {
+          margin-bottom: 10px !important;
+     }
+
+     .row h5::before {
+          top: 26px;
+     }
+
+     .cardd:hover::before {
+          display: none;
+     }
+}
