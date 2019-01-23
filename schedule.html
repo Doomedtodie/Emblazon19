@@ -10,15 +10,16 @@
     <meta name="author" content="Vishesh Mohey(Doomedtodie)" />
     <link rel="shortcut icon" href="images/mask_logo.png">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/team.css" />
+    <link rel="stylesheet" type="text/css" href="css/schedule.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
     <script src="js/snap.svg-min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
     <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this Site in a modern browser for best experience.");</script>
-
 </head>
-<body >
+<body class="demo-1">
 <svg class="hidden">
     <symbol id="icon-menu" viewBox="0 0 119 25">
         <title>menu</title>
@@ -30,7 +31,6 @@
     </symbol>
 </svg>
 
-<div class="background"></div>
 <nav class="menu">
     <div class="menu__item menu__item--1" data-direction="bt">
         <div class="menu__item-inner">
@@ -40,7 +40,7 @@
                 <a href="events.html" class="mainmenu__item">Events</a>
                 <a href="team.html" class="mainmenu__item">Our Team</a>
                 <a href="sponsors.html" class="mainmenu__item">Sponsors</a>
-                <a href="register.html"class="mainmenu__item">Register</a>
+                <a href="register.html" class="mainmenu__item">Register</a>
             </div>
             <p class="label label--topleft label--vert-mirror">HMRITM</p>
             <p class="label label--bottomright label--vert">The Important Stuff</p>
@@ -84,13 +84,48 @@
     <button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
     <button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
 </nav>
-</body>
-<script type="text/javascript" src="js/vendors.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+<main>
+    <div class="content">
+        <!-- Pieces Slider -->
+        <div class="pieces-slider">
+            <!-- Each slide with corresponding image and text -->
+            <div class="pieces-slider__slide">
+                <img class="pieces-slider__image" src="images/1.jpg" alt="">
+                <h2 class="pieces-slider__text">Event 1</h2>
+            </div>
+            <div class="pieces-slider__slide">
+                <img class="pieces-slider__image" src="img/2.jpg" alt="">
+                <h2 class="pieces-slider__text">Event 2</h2>
+            </div>
+            <div class="pieces-slider__slide">
+                <img class="pieces-slider__image" src="img/3.jpg" alt="">
+                <h2 class="pieces-slider__text">Event3</h2>
+            </div>
+            <div class="pieces-slider__slide">
+                <img class="pieces-slider__image" src="img/4.jpg" alt="">
+                <h2 class="pieces-slider__text">Event 4</h2>
+            </div>
+            <div class="pieces-slider__slide">
+                <img class="pieces-slider__image" src="img/5.jpg" alt="">
+                <h2 class="pieces-slider__text">Event 5</h2>
+            </div>
+            <!-- Canvas to draw the pieces -->
+            <canvas class="pieces-slider__canvas"></canvas>
+            <!-- Slider buttons: prev and next -->
+            <button class="pieces-slider__button pieces-slider__button--prev">prev</button>
+            <button class="pieces-slider__button pieces-slider__button--next">next</button>
+        </div>
+    </div>
+</main>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
-
 <script>window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }</script>
 <script src="js/demo.js"></script>
+<script src="js/charming.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src='js/schedule.js'></script>
+<script src='js/pieces.min.js'></script>
+</body>
 </html>
