@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Event Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util_form.css">
+	<link rel="stylesheet" type="text/css" href="css/main_form.css">
+<!--===============================================================================================-->
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyANEPdq4ndxMiTCnZVhb5RBOJ-6LNjQedM",
+    authDomain: "emblazon-2019-8af40.firebaseapp.com",
+    databaseURL: "https://emblazon-2019-8af40.firebaseio.com",
+    projectId: "emblazon-2019-8af40",
+    storageBucket: "emblazon-2019-8af40.appspot.com",
+    messagingSenderId: "433568670827"
+  };
+  firebase.initializeApp(config);
+  
+</script>
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form validate-form" id="newform">
+					<span class="login100-form-title p-b-49">
+						Event Registration
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-23" >
+						<span class="label-input100">Name</span>
+						<input class="input100" type="text" name="username" placeholder="Type your name" required id="name">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<span class="label-input100">Email:</span>
+						<input class="input100" type="email" name="email" placeholder="Type your email" required id="email"> 
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input">
+						<span class="label-input100">Mobile No.</span>
+						<input class="input100" type="text" name="mobile" placeholder="Type your number" required id="mobile">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input" >
+						<span class="label-input100">College Name:</span>
+						<input class="input100" type="text" name="clg_name" placeholder="Type your college name" required id="clg_name">
+						<span class="focus-input100" ></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input" >
+						<span class="label-input100">Choose an Event</span>
+						<select class="input100"  id="event" required>
+						<option value="select" >Select</option>
+						<option value="Battle of bands">Battle of Bands</option>
+						<option value="Fashion Parade">Fashion Parade</option>
+						<option value="Rapping">Rapping</option>
+						<option value="Debate">Debate</option>
+						<option value="Solo Singing">Solo Singing</option>
+						<option value="Duet Singing">Duet Singing</option>
+						<option value="Tatto making/face Painting">Tatto making/face Painting</option>
+						<option value="Tambola">Tambola</option>
+						<option value="Mr. and Ms emblazon">Mr. and Ms emblazon</option>
+						<option value="Treasure hunt">Treasure hunt</option>
+						<option value="Ad mad show">Ad mad show</option>
+						<option value="Solo dance">Solo dance</option>
+						<option value="Duet dance">Duet dance</option>
+						<option value="Group Dance">Group Dance</option>
+						<option value="Minute to win it">Minute to win it</option>
+						<option value="Poetry">Poetry</option>
+						<option value="Entertainment Quiz">Entertainment Quiz</option>
+						<option value="Musical Chair">Musical Chair</option>
+						<option value="Street Play">Street Play</option>
+						<option value="One act play">One act play</option>
+						<option value="Selfie contest">Selfie contest</option>
+						</select>
+						<span class="focus-input100"></span>
+					</div>
+					<br>
+					<div class="radio-inline" class="wrap-input100 validate-input" >
+						<span class="label-input100">Payment</span><br>
+						<center><input type="radio" name="cash" required id="pay">By Cash<br>
+						<input type="radio" name="cash" required id="pay">Via Paytm</center>	
+						<span class="focus-input100" ></span>
+					</div>
+					<br>
+					
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button type="submit" class="login100-form-btn" >
+								Submit
+							</button>
+						</div>
+					</div>
+
+					
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main_form.js"></script>
+	<script src="js/index_form.js"></script>
+
+</body>
+</html>
