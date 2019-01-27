@@ -8,3 +8,6 @@ text-decoration: none;
 .mainmenu__item:hover {
     text-decoration: none;
 }
+.background{
+    z-index: -20;
+}

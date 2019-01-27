@@ -36,17 +36,21 @@
 	padding: 0px; 
 	box-sizing: border-box;
 }
-
+.background{
+  z-index: -5;
+}
 body, html {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
+  overflow: visible;
+  line-height: normal;
 }
 
 /*---------------------------------------------*/
 a {
 	font-family: Poppins-Regular;
 	font-size: 14px;
-	line-height: 1.7;
+	line-height: normal;
 	color: #666666;
 	margin: 0px;
 	transition: all 0.4s;
@@ -72,7 +76,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
 	font-family: Poppins-Regular;
 	font-size: 14px;
-	line-height: 1.7;
+	line-height: normal;
 	color: #666666;
 	margin: 0px;
 }
