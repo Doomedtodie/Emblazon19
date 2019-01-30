@@ -400,7 +400,7 @@ main {
 	position: absolute;
 	top: 1.5rem;
 	right: 1.5rem;
-	z-index: 1000;
+	z-index: 90;
 }
 
 .menu--open .action--menu {
