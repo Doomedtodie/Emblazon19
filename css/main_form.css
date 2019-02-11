@@ -51,7 +51,8 @@ a {
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: normal;
-	color: #666666;
+  color: var(--color-link);
+
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;

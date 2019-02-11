@@ -556,7 +556,7 @@ main {
 	margin: 3rem 0 auto;
 	display: flex;
 	flex-direction: column;
-	height: calc(100% - 3rem);
+
 	--color-link: red;
 	--color-link-hover: red;
 }

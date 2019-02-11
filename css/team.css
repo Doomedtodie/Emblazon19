@@ -179,29 +179,83 @@ Generate "lighting" using box shadows
 /*************************************
 Posters and still images
 **************************************/
-
 .scene:nth-child(1) .movie .poster {
-  background-image: url(../images/team01.jpg);
+	background-image: url(../images/teami1.jpg);
 }
-
-.scene:nth-child(2) .poster {
-  background-image: url(../images/team02.jpg);
+.scene:nth-child(2) .movie .poster {
+	background-image: url(../images/teami5.jpg);
 }
-
-.scene:nth-child(3) .poster {
-  background-image: url(../images/team03.jpg);
+.scene:nth-child(3) .movie .poster {
+	background-image: url(../images/teami6.jpg);
 }
-
+.scene:nth-child(4) .movie .poster {
+	background-image: url(../images/teami7.jpg);
+}
+.scene:nth-child(5) .movie .poster {
+	background-image: url(../images/teami8.jpg);
+}
+.scene:nth-child(6) .movie .poster {
+	background-image: url(../images/teami10.jpg);
+}
+.scene:nth-child(7) .movie .poster {
+	background-image: url(../images/teami11.jpg);
+}
+.scene:nth-child(8) .movie .poster {
+	background-image: url(../images/teami13.jpg);
+}
+.scene:nth-child(9) .movie .poster {
+	background-image: url(../images/teami14.jpg);
+}
+.scene:nth-child(10) .movie .poster {
+	background-image: url(../images/teami15.jpg);
+}
+.scene:nth-child(11) .movie .poster {
+	background-image: url(../images/teami17.jpg);
+}
+.scene:nth-child(12) .movie .poster {
+	background-image: url(../images/teami18.jpg);
+}
+.scene:nth-child(13) .movie .poster {
+	background-image: url(../images/teami19.jpg);
+}
 .scene:nth-child(1) .info header {
 	background-image: url(../images/team1.jpg);
 }
-
 .scene:nth-child(2) .info header {
-	background-image: url(../images/team2.jpg);
+	background-image: url(../images/team5.jpg);
 }
-
 .scene:nth-child(3) .info header {
-	background-image: url(../images/team3.jpg);
+	background-image: url(../images/team6.jpg);
+}
+.scene:nth-child(4) .info header {
+	background-image: url(../images/team7.jpg);
+}
+.scene:nth-child(5) .info header {
+	background-image: url(../images/team8.jpg);
+}
+.scene:nth-child(6) .info header {
+	background-image: url(../images/team10.jpg);
+}
+.scene:nth-child(7) .info header {
+	background-image: url(../images/team11.jpg);
+}
+.scene:nth-child(8) .info header {
+	background-image: url(../images/team13.jpg);
+}
+.scene:nth-child(9) .info header {
+	background-image: url(../images/team14.jpg);
+}
+.scene:nth-child(10) .info header {
+	background-image: url(../images/team15.jpg);
+}
+.scene:nth-child(11) .info header {
+	background-image: url(../images/team17.jpg);
+}
+.scene:nth-child(12) .info header {
+	background-image: url(../images/team18.jpg);
+}
+.scene:nth-child(13) .info header {
+	background-image: url(../images/team19.jpg);
 }
 
 /*************************************

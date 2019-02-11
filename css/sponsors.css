@@ -1,13 +1,7 @@
-img {
-    margin: 15px;
+nav
+{
+    background: transparent;
 }
-.smenu{
-text-decoration: none;
-    line-height: normal;
-}
-.mainmenu__item:hover {
-    text-decoration: none;
-}
-.background{
-    z-index: -20;
+body{
+    overflow-y: visible;
 }
